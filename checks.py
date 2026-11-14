@@ -2,6 +2,7 @@
 from copy import deepcopy
 import json
 import sys
+import boundary_checks
 from queryflow import run
 from samples import TABLES, ENRICH, TOTALS, shared, recursive
 
@@ -171,3 +172,4 @@ if __name__ == '__main__':
         demo()
     else:
         regression()
+        boundary_checks.regression()
